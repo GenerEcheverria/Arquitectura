@@ -1,0 +1,28 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>c:\users\gener_000\Documents\Atmel Studio\7.0\SP test2\SP test2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>c:\users\gener_000\Documents\Atmel Studio\7.0\SP test2\SP test2\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>c:\users\gener_000\Documents\Atmel Studio\7.0\SP test2\SP test2\Debug\SP test2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>SP test2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>SP test2.map</FILE>
+  <FILE>SP test2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <suma><FILE>c:\users\gener_000\Documents\Atmel Studio\7.0\SP test2\SP test2\main.asm</FILE><LINE>27</LINE></suma>
+  <fin><FILE>c:\users\gener_000\Documents\Atmel Studio\7.0\SP test2\SP test2\main.asm</FILE><LINE>47</LINE></fin>
+ </LABELS>
+</ASSEMBLER_INFO>

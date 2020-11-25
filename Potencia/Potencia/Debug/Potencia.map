@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.7  C:\Users\gener_000\Documents\Atmel Studio\7.0\ColocarEnRAM\ColocarEnRAM\main.asm Sun Nov 22 14:06:11 2020
+AVRASM ver. 2.2.7  c:\users\gener_000\Documents\Atmel Studio\7.0\Potencia\Potencia\main.asm Sun Nov 22 20:27:13 2020
 
 
 EQU  SIGNATURE_000 0000001e
@@ -695,5 +695,7 @@ EQU  ACIaddr      0000002e
 EQU  TWIaddr      00000030
 EQU  SPMRaddr     00000032
 EQU  INT_VECTORS_SIZE 00000034
-CSEG ciclo        00000005
-CSEG fin          00000009
+CSEG exp          0000000a
+CSEG finished     00000018
+CSEG ciclo        00000010
+CSEG fin          00000014
