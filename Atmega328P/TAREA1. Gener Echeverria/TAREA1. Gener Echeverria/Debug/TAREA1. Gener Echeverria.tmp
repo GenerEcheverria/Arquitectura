@@ -1,0 +1,27 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\TAREA1. Gener Echeverria\TAREA1. Gener Echeverria\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\TAREA1. Gener Echeverria\TAREA1. Gener Echeverria\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\TAREA1. Gener Echeverria\TAREA1. Gener Echeverria\Debug\TAREA1. Gener Echeverria.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>TAREA1. Gener Echeverria.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>TAREA1. Gener Echeverria.map</FILE>
+  <FILE>TAREA1. Gener Echeverria.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <llenar><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\TAREA1. Gener Echeverria\TAREA1. Gener Echeverria\main.asm</FILE><LINE>21</LINE></llenar>
+ </LABELS>
+</ASSEMBLER_INFO>

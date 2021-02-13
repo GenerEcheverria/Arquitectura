@@ -1,0 +1,41 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Tue Jan 19 18:33:27 2021
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000002    program   0x000002
+                   .org_1       code   0x000008    program   0x000034
+               .udata_acs      udata   0x000000       data   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000003      
+                            0x000008    0x00003b      
+            56 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                       L1   0x00002c    program     static C:\G2PIC\Tarea2.X\main.asm
+                   inicio   0x00000a    program     static C:\G2PIC\Tarea2.X\main.asm
+                ser_inter   0x000036    program     static C:\G2PIC\Tarea2.X\main.asm
+                 contador   0x000000       data     static C:\G2PIC\Tarea2.X\main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   inicio   0x00000a    program     static C:\G2PIC\Tarea2.X\main.asm
+                       L1   0x00002c    program     static C:\G2PIC\Tarea2.X\main.asm
+                ser_inter   0x000036    program     static C:\G2PIC\Tarea2.X\main.asm
+                 contador   0x000000       data     static C:\G2PIC\Tarea2.X\main.asm
+
+

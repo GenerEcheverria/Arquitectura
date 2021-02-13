@@ -1,0 +1,58 @@
+
+
+Microchip MPLAB XC8 Assembler V2.31 build 20201012212115 
+                                                                                                           Tue Dec 15 16:37:54 2020
+
+
+     1                           	processor	18F4550
+     2                           	pagewidth 132
+     3                           	opt	flic
+     4                           
+     5                           ;movlb 0x01 ;Debo cargar en BSR el banco
+     6                           ;addwf 0x00,0,1 ;se le une el 0x01 al 0x00
+     7                           ;La direccion se divide en dos partes 4 y 8 bits,
+     8                           ;los 4 bits de mas peso se cargan en el registro BSR
+     9                           ;y los 8 bits restantes se le ponen a la instrucción
+    10                           ;0x1 00
+    11                           ;addwf 0x00,0,1 tendriamos 0x000 porque se ingora el BSR
+    12                           ;direccionar la memoria 0x320
+    13  0000  0103               	movlb	3	;muevo 3 a BSR
+    14  0002  0E50               	movlw	80	;muevo 0x50 al registro w
+    15  0004  6F20               	movwf	32,b	;muevo 50 a la direccion 0x320
+    16                           tosu	equ	0xFFF
+    17                           tosh	equ	0xFFE
+    18                           tosl	equ	0xFFD
+    19                           stkptr	equ	0xFFC
+    20                           pclatu	equ	0xFFB
+    21                           pclath	equ	0xFFA
+    22                           pcl	equ	0xFF9
+    23                           tblptru	equ	0xFF8
+    24                           tblptrh	equ	0xFF7
+    25                           tblptrl	equ	0xFF6
+    26                           tablat	equ	0xFF5
+    27                           prodh	equ	0xFF4
+    28                           prodl	equ	0xFF3
+    29                           indf0	equ	0xFEF
+    30                           postinc0	equ	0xFEE
+    31                           postdec0	equ	0xFED
+    32                           preinc0	equ	0xFEC
+    33                           plusw0	equ	0xFEB
+    34                           fsr0h	equ	0xFEA
+    35                           fsr0l	equ	0xFE9
+    36                           wreg	equ	0xFE8
+    37                           indf1	equ	0xFE7
+    38                           postinc1	equ	0xFE6
+    39                           postdec1	equ	0xFE5
+    40                           preinc1	equ	0xFE4
+    41                           plusw1	equ	0xFE3
+    42                           fsr1h	equ	0xFE2
+    43                           fsr1l	equ	0xFE1
+    44                           bsr	equ	0xFE0
+    45                           indf2	equ	0xFDF
+    46                           postinc2	equ	0xFDE
+    47                           postdec2	equ	0xFDD
+    48                           preinc2	equ	0xFDC
+    49                           plusw2	equ	0xFDB
+    50                           fsr2h	equ	0xFDA
+    51                           fsr2l	equ	0xFD9
+    52                           status	equ	0xFD8

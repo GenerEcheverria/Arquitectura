@@ -1,0 +1,230 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Main.o
+(abs) - 0 0 0 C 1
+$C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+init CODE 0 0 0 4 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 60-7FF 1
+SFR F60-FFF 1
+BANK0 60-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7FFF 1
+IDLOC 200000-200007 1
+SMALLCONST 800-7FFF 1
+CODE 4-7FFF 1
+BIGRAM 1-7FF 1
+COMRAM 1-5F 1
+CONFIG 300000-30000D 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 800-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_4 0 0 ABS 0 - -
+__Hibigdata 0 0 CODE 0 ibigdata -
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data -
+__Lsmallconst 0 0 SMALLCONST 0 smallconst -
+___sp 0 0 STACK 2 stack C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+_main 0 0 ABS 0 - C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+start 0 0 CODE 0 init C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+__Hpowerup 0 0 CODE 0 powerup -
+__accesstop 60 0 ABS 0 - C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+intlevel0 0 0 CODE 0 text C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+intlevel1 0 0 CODE 0 text C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+intlevel2 0 0 CODE 0 text C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+intlevel3 0 0 CODE 0 text C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM -
+__Hifardata 0 0 CODE 0 ifardata -
+__Hclrtext 0 0 ABS 0 clrtext -
+___inthi_sp 0 0 STACK 2 stack C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+__Hintcode_body 0 0 ABS 0 intcode_body -
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs -
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst -
+__Hintcodelo 0 0 CODE 0 intcodelo -
+__Lintcodelo 0 0 CODE 0 intcodelo -
+start_initialization 0 0 ABS 0 - C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM -
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hconst 0 0 CONST 0 const -
+__Hidata 0 0 CODE 0 idata -
+__Hidloc 0 0 ABS 0 idloc -
+__Hnvbit 0 0 COMRAM 1 nvbit -
+__Hrdata 0 0 COMRAM 1 rdata -
+__Hstack 0 0 STACK 2 stack -
+__Hbigbss 0 0 BIGRAM 1 bigbss -
+__Hbigram 0 0 ABS 0 bigram -
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+__Hcomram 0 0 ABS 0 comram -
+__Hconfig 0 0 ABS 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lconst 0 0 CONST 0 const -
+__Lidata 0 0 CODE 0 idata -
+__Lidloc 0 0 ABS 0 idloc -
+__Lnvbit 0 0 COMRAM 1 nvbit -
+__Lrdata 0 0 COMRAM 1 rdata -
+__Lstack 0 0 STACK 2 stack -
+__Hfarbss 0 0 FARRAM 0 farbss -
+__Lintcode_body 0 0 ABS 0 intcode_body -
+__Habs1 0 0 ABS 0 abs1 -
+__Hdata 0 0 ABS 0 data -
+__Hinit 4 0 CODE 0 init -
+__Hrbit 0 0 COMRAM 1 rbit -
+__Hrbss 0 0 COMRAM 1 rbss -
+__Htemp 0 0 COMRAM 1 temp -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Ldata 0 0 ABS 0 data -
+__Linit 0 0 CODE 0 init -
+__Lrbit 0 0 COMRAM 1 rbit -
+__Lrbss 0 0 COMRAM 1 rbss -
+__Ltemp 0 0 COMRAM 1 temp -
+__Ltext 0 0 ABS 0 text -
+__Hintret 0 0 ABS 0 intret -
+__Hirdata 0 0 CODE 0 irdata -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S4 0 0 ABS 0 - -
+__S5 0 0 ABS 0 - -
+__Lbigdata 0 0 BIGRAM 1 bigdata -
+__Hnvrram 0 0 COMRAM 1 nvrram -
+__Lintentry 0 0 ABS 0 intentry -
+__Hramtop 800 0 RAM 0 ramtop -
+__Hstruct 0 0 COMRAM 1 struct -
+__Lbigbss 0 0 BIGRAM 1 bigbss -
+__Lbigram 0 0 ABS 0 bigram -
+__Lcomram 0 0 ABS 0 comram -
+__Lconfig 0 0 ABS 0 config -
+__Lfarbss 0 0 FARRAM 0 farbss -
+__Lfardata 0 0 FARRAM 0 fardata -
+stackhi 0 0 ABS 0 - C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+stacklo 0 0 ABS 0 - C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+__Lintcode 0 0 CODE 0 intcode -
+__Lintret 0 0 ABS 0 intret -
+__Lirdata 0 0 CODE 0 irdata -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Lnvrram 0 0 COMRAM 1 nvrram -
+__Hintentry 0 0 ABS 0 intentry -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lramtop 800 0 RAM 0 ramtop -
+__Lstruct 0 0 COMRAM 1 struct -
+__ramtop 800 0 RAM 0 ramtop C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 0 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hbigdata 0 0 BIGRAM 1 bigdata -
+__Libigdata 0 0 CODE 0 ibigdata -
+__Lclrtext 0 0 ABS 0 clrtext -
+__HRAM 0 0 ABS 0 - -
+__Hbss 0 0 RAM 1 bss -
+__Hram 0 0 ABS 0 ram -
+__Hsfr 0 0 ABS 0 sfr -
+__LRAM 1 0 ABS 0 - -
+__Lbss 0 0 RAM 1 bss -
+__Lram 0 0 ABS 0 ram -
+__Lsfr 0 0 ABS 0 sfr -
+__Hfardata 0 0 FARRAM 0 fardata -
+__Hsmallconst 0 0 SMALLCONST 0 smallconst -
+__Lifardata 0 0 CODE 0 ifardata -
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs -
+__Hintcode 0 0 CODE 0 intcode -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

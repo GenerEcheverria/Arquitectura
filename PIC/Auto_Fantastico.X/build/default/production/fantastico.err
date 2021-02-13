@@ -1,0 +1,4 @@
+Warning[205] C:\G2PIC\AUTO_FANTASTICO.X\FANTASTICO.ASM 18 : Found directive in column 1. (include)
+Warning[207] C:\G2PIC\AUTO_FANTASTICO.X\FANTASTICO.ASM 26 : Found label after column 1. (L1)
+Warning[207] C:\G2PIC\AUTO_FANTASTICO.X\FANTASTICO.ASM 30 : Found label after column 1. (L2)
+Warning[205] C:\G2PIC\AUTO_FANTASTICO.X\FANTASTICO.ASM 35 : Found directive in column 1. (END)

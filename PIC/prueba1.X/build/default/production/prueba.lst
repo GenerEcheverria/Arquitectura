@@ -1,0 +1,37 @@
+MPASM 5.86                        PRUEBA.ASM   12-17-2020  10:31:15         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001 ;colocar el valor 0x20 en la direccion de memoria RAM 0x222
+                      00002 ;colocar el valor 0x20 en la direccion de memoria RAM 0x323    
+                      00003 ;Hacer la suma de ambos valores y colocar el resultado en 0x000    
+                      00004     code 0x00
+                      00005     
+000000 0102           00006     movlb 0x02          ;muevo 2 a BSR
+000002 0E20           00007     movlw 0x20          ;muevo 0x20 al registro w
+000004 6F22           00008     movwf 0x22,1        ;muevo 0x20 a la direccion 0x222 porque le pega el BSR
+000006 0103           00009     movlb 0x03          ;muevo3 a BSR
+000008 0E30           00010     movlw 0x30          ;muevo 0x30 al registro w
+00000A 6F23           00011     movwf 0x23,1        ;;muevo 0x23 a la direccion 0x323 porque le pega el BSR
+00000C 0102           00012     movlb 0x02          ;muevo 2 a BSR
+00000E 2522           00013     addwf 0x22, 0 ,1    ;Sumo lo que hay en W con 0x222 y resultado en w
+000010 6E00           00014     movwf 0x00,0        ;muevo w a la direccion 0x000, no usa BSR asi que le pega 0
+000012 0000           00015     nop
+                      00016     
+                      00017     
+                      00018     END
+MPASM 5.86                        PRUEBA.ASM   12-17-2020  10:31:15         PAGE  2
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+__18F4550                         00000001
+
+Errors   :     0
+Warnings :     0 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+

@@ -1,0 +1,30 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Interrupciones\Interrupciones\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Interrupciones\Interrupciones\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Interrupciones\Interrupciones\Debug\Interrupciones.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Interrupciones.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Interrupciones.map</FILE>
+  <FILE>Interrupciones.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <inicio><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Interrupciones\Interrupciones\main.asm</FILE><LINE>18</LINE></inicio>
+  <serv_INT0><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Interrupciones\Interrupciones\main.asm</FILE><LINE>35</LINE></serv_INT0>
+  <serv_INT1><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Interrupciones\Interrupciones\main.asm</FILE><LINE>39</LINE></serv_INT1>
+  <L1><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Interrupciones\Interrupciones\main.asm</FILE><LINE>32</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>

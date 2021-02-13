@@ -1,0 +1,184 @@
+Microchip MPLAB XC8 Compiler V2.31
+
+Linker command line:
+
+-W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
+  -h+dist/default/production\G2primero.X.production.sym \
+  --cmf=dist/default/production\G2primero.X.production.cmf -z -w9 \
+  --disl=596:off --norlf -Q18F4550 \
+  -oC:\Users\Ryzen5\AppData\Local\Temp\sauc.2 --defsym=__MPLAB_BUILD=1 \
+  -Mdist/default/production/G2primero.X.production.map -E1 \
+  -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
+  -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
+  -AABS1=00h-07FFh -ABIGRAM=01h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 \
+  -ABANK0=060h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
+  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
+  -ABANK6=0600h-06FFh -ABANK7=0700h-07FFh -ASFR=0F60h-0FFFh \
+  -ACONFIG=0300000h-030000Dh -AIDLOC=0200000h-0200007h \
+  -AEEDATA=0F00000h-0F000FFh -peeprom_data=EEDATA \
+  -preset_vec=00h,intcode,intcodelo,powerup,init -pramtop=0800h \
+  -psmallconst=SMALLCONST -pmediumconst=MEDIUMCONST -pconst=CONST \
+  -AFARRAM=00h-00h \
+  -prdata=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM \
+  -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
+  C:\Users\Ryzen5\AppData\Local\Temp\sauc.o build/default/production/Main.o 
+
+Object code version is 3.11
+
+Machine type is 18F4550
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\Ryzen5\AppData\Local\Temp\sauc.o
+                init                                  0        0        4        0       0
+build/default/production/Main.o
+                (abs)                                 0        0        C        0       0
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+                init                                  0        0        4         0
+
+        CLASS   CONST          
+
+        CLASS   SMALLCONST     
+
+        CLASS   MEDIUMCONST    
+
+        CLASS   COMRAM         
+
+        CLASS   ABS1           
+
+        CLASS   BIGRAM         
+
+        CLASS   RAM            
+
+        CLASS   BANK0          
+
+        CLASS   BANK1          
+
+        CLASS   BANK2          
+
+        CLASS   BANK3          
+
+        CLASS   BANK4          
+
+        CLASS   BANK5          
+
+        CLASS   BANK6          
+
+        CLASS   BANK7          
+
+        CLASS   SFR            
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+        CLASS   FARRAM         
+
+        CLASS   STACK          
+
+        CLASS   UNCLASSED
+                (abs)                                 0        0        C         0
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
+
+                reset_vec                      000000  000004  000004         0       0  CODE    
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            060-0FF            A0
+        BANK1            100-1FF           100
+        BANK2            200-2FF           100
+        BANK3            300-3FF           100
+        BANK4            400-4FF           100
+        BANK5            500-5FF           100
+        BANK6            600-6FF           100
+        BANK7            700-7FF           100
+        BIGRAM           001-7FF           7FF
+        CODE             004-7FFF          7FFC
+        COMRAM           001-05F            5F
+        CONFIG           300000-30000D             E
+        CONST            004-7FFF          7FFC
+        EEDATA           F00000-F000FF           100
+        IDLOC            200000-200007             8
+        MEDIUMCONST      800-7FFF          7800
+        RAM              060-7FF           100
+        SFR              F60-FFF            A0
+        SMALLCONST       800-7FFF           100
+
+                                  Symbol Table
+
+__HRAM               (abs)        000  __Habs1              abs1         000
+__Hbank0             bank0        000  __Hbank1             bank1        000
+__Hbank2             bank2        000  __Hbank3             bank3        000
+__Hbank4             bank4        000  __Hbank5             bank5        000
+__Hbank6             bank6        000  __Hbank7             bank7        000
+__Hbigbss            bigbss       000  __Hbigdata           bigdata      000
+__Hbigram            bigram       000  __Hbss               bss          000
+__Hclrtext           clrtext      000  __Hcomram            comram       000
+__Hconfig            config       000  __Hconst             const        000
+__Hdata              data         000  __Heeprom_data       eeprom_data  000
+__Hfarbss            farbss       000  __Hfardata           fardata      000
+__Hibigdata          ibigdata     000  __Hidata             idata        000
+__Hidloc             idloc        000  __Hifardata          ifardata     000
+__Hintcode           intcode      000  __Hintcode_body      intcode_body 000
+__Hintcodelo         intcodelo    000  __Hintentry          intentry     000
+__Hintret            intret       000  __Hintsave_regs      intsave_regs 000
+__Hirdata            irdata       000  __Hmediumconst       mediumconst  000
+__HnvFARRAM          nvFARRAM     000  __Hnvbit             nvbit        000
+__Hnvrram            nvrram       000  __Hpowerup           powerup      000
+__Hram               ram          000  __Hrbit              rbit         000
+__Hrbss              rbss         000  __Hrdata             rdata        000
+__Hreset_vec         reset_vec    000  __Hsfr               sfr          000
+__Hsmallconst        smallconst   000  __Hspace_1           (abs)        000
+__Hspace_2           (abs)        000  __Hspace_4           (abs)        000
+__Hstack             stack        000  __Hstruct            struct       000
+__Htemp              temp         000  __Htext              text         000
+__Labs1              abs1         000  __Lbank0             bank0        000
+__Lbank1             bank1        000  __Lbank2             bank2        000
+__Lbank3             bank3        000  __Lbank4             bank4        000
+__Lbank5             bank5        000  __Lbank6             bank6        000
+__Lbank7             bank7        000  __Lbigbss            bigbss       000
+__Lbigdata           bigdata      000  __Lbigram            bigram       000
+__Lbss               bss          000  __Lclrtext           clrtext      000
+__Lcomram            comram       000  __Lconfig            config       000
+__Lconst             const        000  __Ldata              data         000
+__Leeprom_data       eeprom_data  000  __Lfarbss            farbss       000
+__Lfardata           fardata      000  __Libigdata          ibigdata     000
+__Lidata             idata        000  __Lidloc             idloc        000
+__Lifardata          ifardata     000  __Linit              init         000
+__Lintcode           intcode      000  __Lintcode_body      intcode_body 000
+__Lintcodelo         intcodelo    000  __Lintentry          intentry     000
+__Lintret            intret       000  __Lintsave_regs      intsave_regs 000
+__Lirdata            irdata       000  __Lmediumconst       mediumconst  000
+__LnvFARRAM          nvFARRAM     000  __Lnvbit             nvbit        000
+__Lnvrram            nvrram       000  __Lpowerup           powerup      000
+__Lram               ram          000  __Lrbit              rbit         000
+__Lrbss              rbss         000  __Lrdata             rdata        000
+__Lreset_vec         reset_vec    000  __Lsfr               sfr          000
+__Lsmallconst        smallconst   000  __Lspace_0           (abs)        000
+__Lspace_1           (abs)        000  __Lspace_2           (abs)        000
+__Lspace_4           (abs)        000  __Lstack             stack        000
+__Lstruct            struct       000  __Ltemp              temp         000
+__Ltext              text         000  __S0                 (abs)        000
+__S1                 (abs)        000  __S4                 (abs)        000
+__S5                 (abs)        000  ___inthi_sp          stack        000
+___intlo_sp          stack        000  ___sp                stack        000
+__mediumconst        mediumconst  000  __smallconst         smallconst   000
+_main                                  __LRAM               (abs)        001
+__Hinit              init         004  __accesstop          (abs)        060
+__Hramtop            ramtop       800  __Hspace_0           (abs)        800
+__Lramtop            ramtop       800  __ramtop             ramtop       800
+intlevel0            text         000  intlevel1            text         000
+intlevel2            text         000  intlevel3            text         000
+stackhi              (abs)        000  stacklo              (abs)        000
+start                init         000  start_initialization                 

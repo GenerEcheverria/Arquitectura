@@ -1,0 +1,31 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Tarea\Tarea\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Tarea\Tarea\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Tarea\Tarea\Debug\Tarea.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Tarea.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Tarea.map</FILE>
+  <FILE>Tarea.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <contador><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Tarea\Tarea\main.asm</FILE><LINE>19</LINE></contador>
+  <inicio><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Tarea\Tarea\main.asm</FILE><LINE>25</LINE></inicio>
+  <serv_INT0><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Tarea\Tarea\main.asm</FILE><LINE>63</LINE></serv_INT0>
+  <L1><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Tarea\Tarea\main.asm</FILE><LINE>44</LINE></L1>
+  <alta><FILE>C:\Users\Ryzen5\Documents\Microchip Studio\Arquitectura\Tarea\Tarea\main.asm</FILE><LINE>69</LINE></alta>
+ </LABELS>
+</ASSEMBLER_INFO>

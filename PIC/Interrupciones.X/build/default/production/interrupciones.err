@@ -1,0 +1,8 @@
+Warning[205] C:\G2PIC\INTERRUPCIONES.X\INTERRUPCIONES.ASM 7 : Found directive in column 1. (udata_acs)
+Warning[205] C:\G2PIC\INTERRUPCIONES.X\INTERRUPCIONES.ASM 10 : Found directive in column 1. (CODE)
+Warning[207] C:\G2PIC\INTERRUPCIONES.X\INTERRUPCIONES.ASM 14 : Found label after column 1. (inicio)
+Warning[207] C:\G2PIC\INTERRUPCIONES.X\INTERRUPCIONES.ASM 33 : Found label after column 1. (oty)
+Error[113]   C:\G2PIC\INTERRUPCIONES.X\INTERRUPCIONES.ASM 35 : Symbol not previously defined (PORTX)
+Error[113]   C:\G2PIC\INTERRUPCIONES.X\INTERRUPCIONES.ASM 37 : Symbol not previously defined (PORTY)
+Warning[207] C:\G2PIC\INTERRUPCIONES.X\INTERRUPCIONES.ASM 39 : Found label after column 1. (ser_inter)
+Warning[205] C:\G2PIC\INTERRUPCIONES.X\INTERRUPCIONES.ASM 43 : Found directive in column 1. (END)
